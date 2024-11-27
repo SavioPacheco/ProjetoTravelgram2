@@ -1,0 +1,31 @@
+header {
+    & nav{
+        align-items: center;
+        padding-block: 1rem;
+        & div:nth-child(2) {
+            margin-left: auto;
+
+            & img {
+                width: 1.5rem;
+                object-fit: cover;
+                align-items: center;
+            }
+        }
+
+        & div:nth-child(5) {
+            & img {
+                width: 40px;
+                object-fit: cover;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (width >= 80em) {
+    header {
+        & nav {
+            padding-block: 1.25rem;
+        }
+    }    
+}

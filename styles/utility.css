@@ -1,0 +1,30 @@
+.container {
+    --max-width: 22.5rem;
+    --px-base: 1rem;
+    width: min(var(--max-width), 100% - var(--px-base));
+    margin-inline: auto;
+    border: solid 1px pink;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (width >= 80em) {
+    .container {
+        --px-base: 2rem;
+        --max-width: 80rem;
+    }
+
+    .desktop-only {
+        display: initial;
+    }
+}
