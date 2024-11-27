@@ -22,14 +22,14 @@
     --fw-lg: 700;
     --fs-base: .875rem;
     --fs-md: 1rem;
-    --fs-lg: 1.25rem;
+    --fs-lg: 1.5rem;
     --fs-xl: 2rem;
     --lh-base: 1.70;
     --lh-sm: 1.25;
     --lh-md: 1.5;
 }
 
-html {
+body {
     font: var(--fw-base) var(--fs-base)/var(--lh-base) var(--ff-sans);
     color: var(--text-color-secondary);
 }
@@ -41,4 +41,10 @@ a {
 
 ul[role="list"] {
     list-style: none;
+}
+
+h1 {
+    font: var(--fw-lg) var(--fs-lg)/var(--lh-md) var(--ff-sans);
+    color: var(--text-color-primary);
+    margin-bottom: .5rem;
 }

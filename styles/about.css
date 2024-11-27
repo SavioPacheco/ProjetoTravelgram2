@@ -1,0 +1,43 @@
+#about {
+    background-color: var(--surface-color);
+    .container {
+        padding: 2rem 1rem;
+
+        & div:first-child {
+            & img {
+                width: 7.5rem;
+                object-fit: contain;
+            }
+        }
+
+        & div:nth-child(2) {
+            & ul {
+                & li {
+                    gap: .5rem;
+                }
+            }
+        }
+    }
+
+    @media (width >= 80em) {
+        & .container {
+            grid-template-columns: repeat(2, 1fr);
+            align-items: center;
+
+            padding: 2rem 0;
+
+            & div:first-child {
+                display: flex;
+                width: 592px;
+
+                & img {
+                    width: 11rem;
+                }
+
+                & div {
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+}
