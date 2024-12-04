@@ -30,6 +30,10 @@
     gap: .5rem;
 }
 
+.gap-pic {
+    gap: 1rem;
+}
+
 @media (width >= 80em) {
     .container {
         --px-base: 2rem;
@@ -41,5 +45,9 @@
     }
     .gap-about {
         gap: 21.5rem;
+    }
+
+    .gap-pic {
+        gap: 1.5rem;
     }
 }
