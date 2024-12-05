@@ -2,6 +2,7 @@
     .container {
         grid-template-rows: repeat(12, 1fr);
         justify-content: center;
+
         & .card {
             aspect-ratio: 1/1;
             overflow: hidden;
@@ -15,7 +16,6 @@
 
     @media (width >= 80em) {
         & .container {
-
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 1fr);
         }

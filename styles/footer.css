@@ -1,0 +1,29 @@
+#footer {
+    & footer {
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+
+        line-height: var(--lh-md);
+
+        & div:first-child {
+            justify-content: center;
+        }
+    }
+}
+
+@media (width >= 80em) {
+    #footer {
+        & footer {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+
+            & div:first-child {
+                display: initial;
+            }
+
+            & div:nth-child(2) {
+                margin-left: auto;
+            }
+        }
+    }
+}

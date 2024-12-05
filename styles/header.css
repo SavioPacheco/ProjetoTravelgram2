@@ -2,7 +2,6 @@ header {
     background-color: var(--surface-color);
     & nav{
         align-items: center;
-        padding-block: 1rem;
         & div:nth-child(2) {
             margin-left: auto;
 
@@ -25,8 +24,13 @@ header {
 
 @media (width >= 80em) {
     header {
-        & nav {
+        .container {
             padding-block: 1.25rem;
+
+            & nav {
+                font-size: var(--fs-md);
+                line-height: var(--lh-md);
+            }
         }
     }    
 }

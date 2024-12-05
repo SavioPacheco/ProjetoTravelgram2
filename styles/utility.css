@@ -3,7 +3,7 @@
     --px-base: 1rem;
     width: min(var(--max-width), 100% - var(--px-base) *2);
     margin-inline: auto;
-    border: solid 1px pink;
+    padding-block: 1rem;
 }
 
 .flex {
@@ -38,6 +38,7 @@
     .container {
         --px-base: 2rem;
         --max-width: 80rem;
+        padding-block: 1.5rem;
     }
 
     .desktop-only {
